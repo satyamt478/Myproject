@@ -8,7 +8,7 @@ export function Delete() {
     async function deleteData(e) {
         e.preventDefault();
         try {
-            const response = await axios.delete(`http://localhost:3001/api/employees/${id}`);
+            const response = await axios.delete(`https://satyam-employee.onrender.com/api/employees/${id}`);
             alert(response.data.message || "Record deleted successfully!");
         } catch (err) {
             alert("Record Not Found or Error Occurred: " + err.message);

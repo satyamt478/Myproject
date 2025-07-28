@@ -1,0 +1,85 @@
+/* Container for centering the form */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, hwb(80 22% 74%));
+}
+
+
+/* Form box styling */
+
+.form-box {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Form title */
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #00796b;
+}
+
+
+/* Input fields */
+
+.form-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-box input:focus {
+    border-color: #679d65;
+}
+
+
+/* Submit button */
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: hsl(139, 47%, 54%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-box button:hover {
+    background-color: #008ba3;
+}
+
+
+/* Message box */
+
+.message-card {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: 6px;
+    color: #ff6f00;
+    text-align: center;
+    font-weight: 500;
+}

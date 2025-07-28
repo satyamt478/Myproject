@@ -1,0 +1,84 @@
+/* Main container */
+
+div {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+
+/* Headings */
+
+h3 {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 30px;
+    color: #0288d1;
+    font-size: 20px;
+}
+
+
+/* Input field */
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #00acc1;
+}
+
+
+/* Button styling */
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008ba3;
+}
+
+
+/* Employee data output */
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+
+/* Divider */
+
+hr {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}

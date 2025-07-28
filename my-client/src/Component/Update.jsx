@@ -12,7 +12,7 @@ export function Update() {
     async function A(e) {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:3001/api/employees/${id}`, {
+            const response = await axios.put(`https://satyam-employee.onrender.com/api/employees/${id}`, {
                 empNo: Number(empNo),
                 empName,
                 empSal: Number(empSal)

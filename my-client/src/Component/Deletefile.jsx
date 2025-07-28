@@ -1,35 +1,32 @@
 import axios from "axios";
 import { useState } from "react";
-import './Deletefile.css';
+import "./Deletefile.css";
 
 export function Delete() {
-    const [id, setId] = useState("");
+  const [id, setId] = useState("");
 
-    async function deleteData(e) {
-        e.preventDefault();
-        try {
-            const response = await axios.delete(`https://satyam-employee.onrender.com/api/employees/${id}`);
-            alert(response.data.message || "Record deleted successfully!");
-        } catch (err) {
-            alert("Record Not Found or Error Occurred: " + err.message);
-        }
+  async function deleteHandler(e) {
+    e.preventDefault();
+    try {
+      const response = await axios.delete(`https://satyam-employee.onrender.com/api/employees/${id}`);
+      alert(response.data.message || "Deleted Successfully");
+    } catch (err) {
+      alert("Error deleting record: " + err.message);
     }
+  }
 
-    return (
-        <div className="container-delete">
-            <h3>Delete Record By ID</h3>
-            <hr />
-            <form onSubmit={deleteData}>
-                <input 
-                    type="text" 
-                    placeholder="Enter ID" 
-                    value={id} 
-                    onChange={e => setId(e.target.value)} 
-                    required 
-                />
-                <br /><br />
-                <button type="submit">Remove Data</button>
-            </form>
-        </div>
-    );
+  return (
+    <div className="container-delete">
+      <h3>Delete Record By ID</h3>
+      <form onSubmit={deleteHandler}>
+        <input
+          type="text"
+          placeholder="Enter ID"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+        />
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  );
 }

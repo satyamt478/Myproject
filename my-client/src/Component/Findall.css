@@ -16,6 +16,7 @@
     padding: 0.75rem;
     border: 1px solid #ddd;
     text-align: left;
+    vertical-align: middle;
 }
 
 .employee-table th {
@@ -38,6 +39,24 @@ form button:hover {
     background-color: #08306b;
 }
 
+.copy-btn {
+    margin-left: 30px;
+    font-size: 19px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    transform: translateY(3px);
+}
+
+.copied-msg {
+    margin-left: 30px;
+    color: green;
+    width: 12px;
+    font-size: 90rem;
+}
+
 @media (max-width: 600px) {
     input,
     button {
@@ -48,5 +67,9 @@ form button:hover {
     .container-update,
     .container-delete {
         padding: 1.2rem;
+    }
+    .copied-msg {
+        display: block;
+        margin-top: 4px;
     }
 }

@@ -1,85 +1,70 @@
-/* Container for centering the form */
-
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
+    padding: 2rem;
+    background-color: #e8f5e9;
     min-height: 100vh;
-    background: linear-gradient(to right, #e0f7fa, hwb(80 22% 74%));
 }
-
-
-/* Form box styling */
 
 .form-box {
-    background-color: #ffffff;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    transition: 0.3s ease-in-out;
 }
-
-
-/* Form title */
 
 .form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 25px;
-    color: #00796b;
+    color: #4caf50;
 }
 
-
-/* Input fields */
-
-.form-box input {
+input {
     width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 18px;
-    border: 1px solid #b0bec5;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.2s ease-in-out;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
 }
 
-.form-box input:focus {
-    border-color: #679d65;
-}
-
-
-/* Submit button */
-
-.form-box button {
+button {
     width: 100%;
-    padding: 12px;
-    background-color: hsl(139, 47%, 54%);
-    color: white;
-    font-size: 16px;
+    padding: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
+    background-color: #4caf50;
+    color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: background 0.3s ease;
 }
 
-.form-box button:hover {
-    background-color: #008ba3;
+button:hover {
+    background-color: #388e3c;
 }
-
-
-/* Message box */
 
 .message-card {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #fff8e1;
-    border: 1px solid #ffe082;
-    border-radius: 6px;
-    color: #ff6f00;
-    text-align: center;
-    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #ffecb3;
+    border-left: 4px solid #ffa000;
+    border-radius: 8px;
+    color: #795548;
+}
+
+@media (max-width: 600px) {
+    input,
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    .form-box,
+    .container-update,
+    .container-delete {
+        padding: 1.2rem;
+    }
 }

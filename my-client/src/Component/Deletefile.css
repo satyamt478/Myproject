@@ -1,36 +1,49 @@
 .container-delete {
-    width: 360px;
-    margin: 50px auto;
-    padding: 25px;
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    text-align: center;
 }
 
 .container-delete h3 {
-    text-align: center;
-    color: #c62828;
+    color: #d32f2f;
 }
 
 .container-delete input {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    border-radius: 10px;
 }
 
 .container-delete button {
-    margin-top: 15px;
-    width: 100%;
-    padding: 12px;
-    background-color: #e53935;
+    background-color: #d32f2f;
     color: white;
+    padding: 0.75rem;
     border: none;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
 .container-delete button:hover {
-    background-color: #c62828;
+    background-color: #b71c1c;
+}
+
+@media (max-width: 600px) {
+    input,
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    .form-box,
+    .container-update,
+    .container-delete {
+        padding: 1.2rem;
+    }
 }

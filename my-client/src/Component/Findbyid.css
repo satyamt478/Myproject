@@ -1,84 +1,49 @@
-/* Main container */
-
-div {
-    max-width: 500px;
-    margin: 60px auto;
-    padding: 30px;
-    background: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
+.findbyid-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #e3f2fd;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
 }
 
-
-/* Headings */
-
-h3 {
-    color: #00796b;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-h4 {
-    margin-top: 30px;
-    color: #0288d1;
-    font-size: 20px;
-}
-
-
-/* Input field */
-
-input[type="text"] {
+.findbyid-container input {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
+    padding: 0.75rem;
     border-radius: 6px;
-    outline: none;
-    transition: border-color 0.2s ease-in-out;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
 }
 
-input[type="text"]:focus {
-    border-color: #00acc1;
-}
-
-
-/* Button styling */
-
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #00bcd4;
+.findbyid-container button {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #2196f3;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 0.75rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #008ba3;
+.findbyid-container button:hover {
+    background-color: #1976d2;
 }
 
-
-/* Employee data output */
-
-p {
-    font-size: 16px;
-    color: #333;
-    margin: 8px 0;
+.findbyid-container p {
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
-
-/* Divider */
-
-hr {
-    margin: 15px 0;
-    border: none;
-    height: 1px;
-    background-color: #ccc;
+@media (max-width: 600px) {
+    input,
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    .form-box,
+    .container-update,
+    .container-delete {
+        padding: 1.2rem;
+    }
 }

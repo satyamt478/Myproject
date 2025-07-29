@@ -2,7 +2,8 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
-const port = 'https://myproject-usd4.onrender.com';
+app.listen(process.env.PORT || 'https://myproject-usd4.onrender.com');
+
 const app = express();
 const cors = require('cors')
 

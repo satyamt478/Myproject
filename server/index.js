@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // ✅ Listen only after everything is set up
-const PORT = process.env.PORT || 3001;
+const port = 'https://myproject-usd4.onrender.com';
 
 async function connectDB() {
     try {
@@ -105,6 +105,6 @@ app.put('/api/employees/:id', async(req, res) => {
 });
 
 // ✅ Start the server
-app.listen(PORT, () => {
+app.listen({port}, () => {
     console.log(`✅ Server started on http://localhost:${PORT}`);
 });
